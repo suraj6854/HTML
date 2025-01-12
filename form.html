@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Enquiry Form</legend>
+		<form method="" action="">	
+		<label>Gender</label><br>
+		<input type="radio" value="male" name="Gender"/>Male
+		<input type="radio" value="female" name="Gender"/>Female
+		<br>
+		<label>Name</label><br/>
+		<input type="text" placeholder="Enter the name" name="uname">
+		<br/>
+		<label>Course</label><br>
+		<input type="checkbox" value="PHP" />PHP
+		<input type="checkbox" value="CSS" />CSS
+		<input type="checkbox" value="PYTHON" />PYTHON
+		<br/>
+		<label>Email</label><br/>
+		<input type="email" placeholder="Enter your Email" name="uemail"><br/>
+		<label>Phone</label><br>
+		<input type="tel" pattern="[0-9]{10}" title="Enter the valid Phone number" placeholder="Enter your number" name="uphone"><br/>
+		<label>Message</label><br>
+		<textarea></textarea><br>
+		<label>Photo</label><br>
+		<input type="file" /><br>
+		<label>Password</label><br>
+		<input type="Password"><br>
+		<label>Country</label><br>
+		<select>
+			<option>---Select Country---</option>
+			<option value="India">India	</option>
+			<option value="Canada">Canada</option>
+			<option value="America">America</option>
+			<option value="Africa">Africa</option>
+			<option value="Australia">Australia</option>
+		</select>
+		<br>
+			<label>Course</label><br>
+			<select>
+				<option>---Select---</option>
+				<optgroup label="Frontend">
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JAVASRIPT</option>
+				</optgroup>
+				<optgroup label="Backend">
+					<option>Python</option>
+					<option>MySQL</option>
+					<option>Node</option>	
+				</optgroup>
+				</select>
+				<br>
+			<label><b>Items</b></label>
+			<br>
+				Name<br>
+				<input type="text" required minlength="3" maxlength="20"><br>
+				QTY<br>
+				<input type="number" min="1" max="10"/ ><br>
+				Date<br>
+				<input type="date" ><br>
+				Time<br>
+				<input type="time" /><br>
+				Week<br>
+				<input type="week" /><br>
+				Month<br>
+				<input type="month" /><br>
+				color<br>
+				<input type="color" /><br>
+				Url<br>
+				<input type="url" /><br>
+				Range<br>
+				<input type="range" /><br>
+				<label>Items</label><br>
+				<input type="text" list="Course"/>
+				<datalist id="Course">
+					<option value="HTML">
+					<option value="CSS">
+					<option value="JAVASRIPT">
+					<option value="PYTHON">	
+					<option value="MTSQL">
+				</datalist>
+				<br>
+		<button type="Submit">Save</button>
+		<input type="reset" value="reset"/>
+
+	</form>
+	</fieldset>
+</body>
+</html>
